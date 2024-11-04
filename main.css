@@ -1,0 +1,102 @@
+/*body {
+ margin: 0;
+    overflow: scroll; 
+    background-image: url('mahler web bg2.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 600vh; 
+
+    opacity: 0.6;
+    background-color: black;
+}
+
+
+ 
+                canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none; /* Prevent canvas from interfering with mouse events */
+        }
+
+
+  body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Hide default scrollbars */
+        width: 90vw;
+        height: 90vh;
+        opacity: 0.6;
+        background-color: black;
+
+    }
+
+    body::-webkit-scrollbar {
+  display: none;
+}
+
+    /* Canvas container with extra space for scrolling */
+    #canvasContainer {
+      margin: 0;
+      padding: 0;
+      opacity: 0.9;
+        position: relative;
+        width: 280vw; /* Width for scrolling in all directions */
+        height: 300vh; /* Height for scrolling in all directions */
+        background-image: url('mahler web bg2.jpg'); /* Replace with your image */
+              background-color: black;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Canvas positioned on top of the centered container */
+    #trailCanvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Consistent box sizing */
+
+}
+
+.text {
+    color: whitesmoke;
+    font-size: 10px;
+    font-family: Helvetica, sans-serif; /* Added a fallback font */
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 48%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to truly center it */
+    mix-blend-mode: difference;
+}
+
+.info1 {
+   padding: 5px;
+   color: whitesmoke;
+    font-size: 10px;
+    font-family: Helvetica, sans-serif; /* Added a fallback font */
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    top: 8%; /* Center vertically */
+    left: 10%; /* Center horizontally */
+    mix-blend-mode: difference;
+    opacity: 0;
+    transition: 2s ease-out;
+}
+
+.info1:hover {
+   opacity: 1;
+
+}
+
