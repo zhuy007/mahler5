@@ -28,7 +28,7 @@
         height: 90vh;
         opacity: 0.6;
         background-color: black;
-
+        cursor: none !important;
     }
 
     body::-webkit-scrollbar {
@@ -37,6 +37,7 @@
 
     /* Canvas container with extra space for scrolling */
     #canvasContainer {
+                cursor: none !important;
       margin: 0;
       padding: 0;
       opacity: 0.9;
@@ -66,37 +67,84 @@
 
 }
 
-.text {
+.title {
     color: whitesmoke;
-    font-size: 10px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
-    position: fixed;
+    position: absolute;
     text-align: center;
+    font-weight: bold ;
     width: 100%;
     top: 48%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust positioning to truly center it */
     mix-blend-mode: difference;
+    opacity: 0.4;
+    transition: ease 1s ;
 }
+
+.title-hovered {
+    opacity: 1;
+}
+
+
 
 .info1 {
    padding: 5px;
    color: whitesmoke;
-    font-size: 10px;
+    font-size: 13px;
+    font-family: Helvetica, sans-serif; /* Added a fallback font */
+    z-index: 98;
+    top: 50%; /* Center vertically */
+    left: 30%; /* Center horizontally */
+    mix-blend-mode: difference;
+    opacity: 0.3;
+    transition: ease 1s ;
+        width: 380px;
+}
+
+.info1-hovered {
+    opacity: 1;
+}
+
+.info2 {
+    padding: 5px;
+   color: whitesmoke;
+   position: absolute;
+    font-size: 13px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
-    position: fixed;
-    text-align: center;
-    top: 8%; /* Center vertically */
-    left: 10%; /* Center horizontally */
+    top: 98%; /* Center vertically */
+    left: 1%; /* Center horizontally */
     mix-blend-mode: difference;
-    opacity: 0;
-    transition: 2s ease-out;
-}
+    opacity: 0.7;
+    transition: ease 1s ;
+            width: 380px;
 
-.info1:hover {
-   opacity: 1;
 
 }
 
+.info2-hovered {
+    opacity: 1;
+}
+
+.info3 {
+   padding: 5px;
+   color: whitesmoke;
+   position: absolute;
+    font-size: 13px;
+    font-family: Helvetica, sans-serif; /* Added a fallback font */
+    z-index: 99;
+    top: 80%; /* Center vertically */
+    left: 80%; /* Center horizontally */
+    mix-blend-mode: difference;
+    opacity: 0.3;
+    transition: ease 1s ;
+    width: 380px;
+
+}
+
+.info3:hover {
+    opacity: 1;
+}
