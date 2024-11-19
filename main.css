@@ -80,7 +80,7 @@
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust positioning to truly center it */
     mix-blend-mode: difference;
-    opacity: 0.4;
+    opacity: 0.3;
     transition: ease 1s ;
 }
 
@@ -88,7 +88,9 @@
     opacity: 1;
 }
 
-
+.info {
+/*    text-align: center;*/
+}
 
 .info1 {
    padding: 5px;
@@ -115,17 +117,21 @@
     font-size: 13px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
-    top: 98%; /* Center vertically */
+    top: 95%; /* Center vertically */
     left: 1%; /* Center horizontally */
     mix-blend-mode: difference;
     opacity: 0.7;
     transition: ease 1s ;
-            width: 380px;
+    width: 420px;
 
 
 }
 
-.info2-hovered {
+/*.info2-hovered {
+    opacity: 1;
+}
+*/
+.info2:hover {
     opacity: 1;
 }
 
@@ -141,10 +147,73 @@
     mix-blend-mode: difference;
     opacity: 0.3;
     transition: ease 1s ;
-    width: 380px;
+    width: 450px;
 
 }
 
 .info3:hover {
+    opacity: 1;
+}
+
+.info4 {
+   padding: 5px;
+   color: whitesmoke;
+   position: absolute;
+    font-size: 13px;
+    font-family: Helvetica, sans-serif; /* Added a fallback font */
+    z-index: 99;
+    top: 10%; /* Center vertically */
+    left: 10%; /* Center horizontally */
+    mix-blend-mode: difference;
+    opacity: 0.3;
+    transition: ease 1s ;
+    width: 420px;
+
+}
+
+.info4:hover {
+    opacity: 1;
+}
+
+.info5 {
+   padding: 5px;
+   color: whitesmoke;
+   position: absolute;
+    font-size: 13px;
+    font-family: Helvetica, sans-serif; /* Added a fallback font */
+    z-index: 99;
+    top: 30%; /* Center vertically */
+    left: 70%; /* Center horizontally */
+    mix-blend-mode: difference;
+    opacity: 0.3;
+    transition: ease 1s ;
+    width: 450px;
+
+}
+
+/*.info5-hovered {
+    opacity: 1;
+}*/
+.info5:hover {
+    opacity: 1;
+}
+
+.info6 {
+   padding: 5px;
+   color: whitesmoke;
+   position: absolute;
+    font-size: 13px;
+    font-family: Helvetica, sans-serif; /* Added a fallback font */
+    z-index: 99;
+    top: 50%; /* Center vertically */
+    left: 85%; /* Center horizontally */
+    mix-blend-mode: difference;
+    opacity: 0.3;
+    transition: ease 1s ;
+    width: 450px;
+
+}
+
+.info6:hover {
     opacity: 1;
 }

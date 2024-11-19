@@ -127,7 +127,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.title, .info1, .info2').hover(function() {
+    $('.title, .info1').hover(function() {
         // On hover, add the corresponding '-hovered' class
         $(this).addClass($(this).attr('class') + '-hovered');
     });
