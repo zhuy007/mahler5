@@ -103,7 +103,6 @@
     mix-blend-mode: difference;
     opacity: 0.3;
     transition: ease 1s ;
-        width: 380px;
 }
 
 .info1-hovered {
@@ -120,20 +119,15 @@
     top: 95%; /* Center vertically */
     left: 1%; /* Center horizontally */
     mix-blend-mode: difference;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: ease 1s ;
-    width: 420px;
-
-
 }
 
-/*.info2-hovered {
+.info2-hovered {
     opacity: 1;
 }
-*/
-.info2:hover {
-    opacity: 1;
-}
+
+
 
 .info3 {
    padding: 5px;
@@ -147,11 +141,9 @@
     mix-blend-mode: difference;
     opacity: 0.3;
     transition: ease 1s ;
-    width: 450px;
-
 }
 
-.info3:hover {
+.info3-hovered {
     opacity: 1;
 }
 
@@ -167,11 +159,9 @@
     mix-blend-mode: difference;
     opacity: 0.3;
     transition: ease 1s ;
-    width: 420px;
-
 }
 
-.info4:hover {
+.info4-hovered {
     opacity: 1;
 }
 
@@ -187,14 +177,9 @@
     mix-blend-mode: difference;
     opacity: 0.3;
     transition: ease 1s ;
-    width: 450px;
-
 }
 
-/*.info5-hovered {
-    opacity: 1;
-}*/
-.info5:hover {
+.info5-hovered {
     opacity: 1;
 }
 
@@ -210,10 +195,8 @@
     mix-blend-mode: difference;
     opacity: 0.3;
     transition: ease 1s ;
-    width: 450px;
-
 }
 
-.info6:hover {
+.info6-hovered {
     opacity: 1;
 }
