@@ -22,14 +22,14 @@
 
 
   body, html {
-        margin: 0;
+        /*margin: 0;
         padding: 0;
-        overflow: hidden; /* Hide default scrollbars */
-        width: 90vw;
-        height: 90vh;
-        opacity: 0.6;
-        background-color: black;
-        cursor: none !important;
+        overflow: hidden;*/ /* Hide default scrollbars */
+/*        width: 280vw;
+        height: 300vh;
+        opacity: 0.6;*/
+/*        background-color: black;*/
+/*        cursor: none !important;*/
     }
 
     body::-webkit-scrollbar {
@@ -45,14 +45,33 @@
         position: relative;
         width: 280vw; /* Width for scrolling in all directions */
         height: 300vh; /* Height for scrolling in all directions */
-        background-image: url('mahler web bg2.jpg'); /* Replace with your image */
+        background-image: url('wave full bleed.jpg'); /* Replace with your image */
               background-color: black;
         background-size: cover;
         background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+            background-repeat: no-repeat; /* Prevent tiling */
+
+
     }
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black; /* Fallback */
+     width: 280vw;
+        height: 300vh;
+                cursor: none !important;
+
+}
+
+
+
 
     /* Canvas positioned on top of the centered container */
     #trailCanvas {
@@ -137,7 +156,7 @@
     font-size: 14px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
-    top: 80%; /* Center vertically */
+    top: 78%; /* Center vertically */
     left: 80%; /* Center horizontally */
     mix-blend-mode: difference;
     opacity: 0.3;
@@ -199,5 +218,23 @@
 }
 
 .info6-hovered {
+    opacity: 1;
+}
+
+.info7 {
+   padding: 5px;
+   color: whitesmoke;
+   position: absolute;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif; /* Added a fallback font */
+    z-index: 99;
+    top: 30%; /* Center vertically */
+    left: 20%; /* Center horizontally */
+    mix-blend-mode: difference;
+    opacity: 0.3;
+    transition: ease 1s ;
+}
+
+.info7-hovered {
     opacity: 1;
 }
