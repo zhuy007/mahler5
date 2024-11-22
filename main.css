@@ -20,6 +20,7 @@
         }
 
 
+
   body, html {
         margin: 0;
         padding: 0;
@@ -69,7 +70,7 @@
 
 .title {
     color: whitesmoke;
-    font-size: 14px;
+    font-size: 20px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
     position: absolute;
@@ -95,7 +96,7 @@
 .info1 {
    padding: 5px;
    color: whitesmoke;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 98;
     top: 50%; /* Center vertically */
@@ -113,7 +114,7 @@
     padding: 5px;
    color: whitesmoke;
    position: absolute;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
     top: 95%; /* Center vertically */
@@ -133,7 +134,7 @@
    padding: 5px;
    color: whitesmoke;
    position: absolute;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
     top: 80%; /* Center vertically */
@@ -151,7 +152,7 @@
    padding: 5px;
    color: whitesmoke;
    position: absolute;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
     top: 10%; /* Center vertically */
@@ -169,7 +170,7 @@
    padding: 5px;
    color: whitesmoke;
    position: absolute;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
     top: 30%; /* Center vertically */
@@ -187,11 +188,11 @@
    padding: 5px;
    color: whitesmoke;
    position: absolute;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif; /* Added a fallback font */
     z-index: 99;
     top: 50%; /* Center vertically */
-    left: 85%; /* Center horizontally */
+    left: 80%; /* Center horizontally */
     mix-blend-mode: difference;
     opacity: 0.3;
     transition: ease 1s ;
