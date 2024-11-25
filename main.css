@@ -73,6 +73,8 @@ body, html {
             font-family: Helvetica, sans-serif; 
             font-style: italic;
             text-align: left;
+            cursor: pointer;
+
         }
 
         span {
