@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
     const canvas = document.getElementById('trailCanvas');
     const ctx = canvas.getContext('2d');
@@ -14,12 +12,12 @@ $(document).ready(function() {
     let lastY = -1;
 
     function drawOval(x, y, size) {
-        const width = size * (Math.random() * 0.5 + 1); // Randomize oval width
-        const height = size * (Math.random() * 0.3 + 0.7); // Randomize oval height
+        const width = size * (Math.random() * 0.5 + 1); 
+        const height = size * (Math.random() * 0.3 + 0.7); 
         
         ctx.beginPath();
-        ctx.ellipse(x, y, width, height, Math.PI / 4, 0, Math.PI * 2); // Oval shape with slight rotation
-        ctx.fillStyle = 'rgba(200, 220, 255, 0.9)'; // Whitish-baby blue color
+        ctx.ellipse(x, y, width, height, Math.PI / 4, 0, Math.PI * 2); 
+        ctx.fillStyle = 'rgba(200, 220, 255, 0.9)'; 
         ctx.shadowColor = 'rgba(255, 255, 255, 0.6)';
         ctx.shadowBlur = size * 2;
         ctx.fill();
@@ -47,11 +45,11 @@ $(document).ready(function() {
         lastX = x;
         lastY = y;
 
-        const scrollSpeed = 0.5; // Adjust scroll speed as needed
-        if (event.clientX < 500) window.scrollBy(-scrollSpeed, 0); // Scroll left
-        if (event.clientX > window.innerWidth - 500) window.scrollBy(scrollSpeed, 0); // Scroll right
-        if (event.clientY < 500) window.scrollBy(0, -scrollSpeed); // Scroll up
-        if (event.clientY > window.innerHeight - 500) window.scrollBy(0, scrollSpeed); // Scroll down
+        const scrollSpeed = 0.5; 
+        if (event.clientX < 500) window.scrollBy(-scrollSpeed, 0); 
+        if (event.clientX > window.innerWidth - 500) window.scrollBy(scrollSpeed, 0); 
+        if (event.clientY < 500) window.scrollBy(0, -scrollSpeed); 
+        if (event.clientY > window.innerHeight - 500) window.scrollBy(0, scrollSpeed); 
     });
 
     $(window).mouseleave(function() {
@@ -66,7 +64,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.title, .info1, .info2, .info3, .info4, .info5, .info6, .info7').hover(function() {
-        // On hover, add the corresponding '-hovered' class
         $(this).addClass($(this).attr('class') + '-hovered');
     });
 });
@@ -75,14 +72,13 @@ $(document).mousemove(function (event) {
     const x = event.clientX + window.scrollX;
     const y = event.clientY + window.scrollY;
 
-    // Get maximum scrollable boundaries
     const maxScrollX = document.documentElement.scrollWidth - window.innerWidth;
     const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
 
-    if (event.clientX < 500 && window.scrollX > 0) window.scrollBy(-0.8, 0); // Scroll left
-    if (event.clientX > window.innerWidth - 500 && window.scrollX < maxScrollX) window.scrollBy(0.8, 0); // Scroll right
-    if (event.clientY < 500 && window.scrollY > 0) window.scrollBy(0, -0.8); // Scroll up
-    if (event.clientY > window.innerHeight - 500 && window.scrollY < maxScrollY) window.scrollBy(0, 0.8); // Scroll down
+    if (event.clientX < 500 && window.scrollX > 0) window.scrollBy(-0.8, 0); 
+    if (event.clientX > window.innerWidth - 500 && window.scrollX < maxScrollX) window.scrollBy(0.8, 0); 
+    if (event.clientY < 500 && window.scrollY > 0) window.scrollBy(0, -0.8); 
+    if (event.clientY > window.innerHeight - 500 && window.scrollY < maxScrollY) window.scrollBy(0, 0.8); 
 });
 
         const listenButton = document.getElementById("listen-button");
