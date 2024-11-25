@@ -47,7 +47,7 @@ $(document).ready(function() {
         lastX = x;
         lastY = y;
 
-        const scrollSpeed = 0.8; // Adjust scroll speed as needed
+        const scrollSpeed = 0.5; // Adjust scroll speed as needed
         if (event.clientX < 500) window.scrollBy(-scrollSpeed, 0); // Scroll left
         if (event.clientX > window.innerWidth - 500) window.scrollBy(scrollSpeed, 0); // Scroll right
         if (event.clientY < 500) window.scrollBy(0, -scrollSpeed); // Scroll up
@@ -85,4 +85,14 @@ $(document).mousemove(function (event) {
     if (event.clientY > window.innerHeight - 500 && window.scrollY < maxScrollY) window.scrollBy(0, 0.8); // Scroll down
 });
 
+        const listenButton = document.getElementById("listen-button");
+        const imageModal = document.getElementById("image-modal");
+
+        listenButton.addEventListener("click", () => {
+            imageModal.style.display = "flex";
+        });
+
+        imageModal.addEventListener("click", () => {
+            imageModal.style.display = "none";
+        });
 
